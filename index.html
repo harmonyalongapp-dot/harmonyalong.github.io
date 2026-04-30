@@ -826,6 +826,113 @@
   </div>
 </section>
 
+<!-- ═══ FEEDBACK FORM ═══ -->
+<section style="padding:90px 24px;background:white;position:relative;z-index:1;">
+  <div class="container">
+    <div class="section-eyebrow">Help Us Build This For You</div>
+    <h2 class="section-title" style="margin-bottom:14px;">Tell us about <em>your singing life.</em></h2>
+    <p class="section-sub" style="margin-bottom:48px;">We're building HarmonyAlong for real people who love to sing. Your answers will shape everything we build.</p>
+
+    <div style="max-width:620px;margin:0 auto;">
+
+      <!-- Question 1 -->
+      <div style="margin-bottom:28px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">1. How do you currently learn harmony parts when singing with others?</label>
+        <textarea id="q1" rows="3" placeholder="e.g. I just try to figure it out by ear, or I don't really harmonize yet..." style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:14px;font-family:'Lato',sans-serif;font-size:15px;color:var(--text);outline:none;resize:vertical;background:#fafafa;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+      </div>
+
+      <!-- Question 2 -->
+      <div style="margin-bottom:28px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">2. How often do you sing with friends or family?</label>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;" id="q2">
+          <button class="feedback-chip" onclick="selectChip(this,'q2')">Never — but I want to</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q2')">Sometimes</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q2')">Often</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q2')">All the time!</button>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div style="margin-bottom:28px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">3. What's the hardest part about harmonizing with others?</label>
+        <textarea id="q3" rows="3" placeholder="e.g. I can hear the harmony in my head but don't know how to sing it..." style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:14px;font-family:'Lato',sans-serif;font-size:15px;color:var(--text);outline:none;resize:vertical;background:#fafafa;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+      </div>
+
+      <!-- Question 4 -->
+      <div style="margin-bottom:28px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">4. What type of music do you love to sing most?</label>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;" id="q4">
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">Pop</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">Gospel</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">Folk & Acoustic</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">Classical</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">Disney & Musicals</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">R&B & Soul</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q4')">Everything!</button>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div style="margin-bottom:28px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">5. What device would you mainly use?</label>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;" id="q5">
+          <button class="feedback-chip" onclick="selectChip(this,'q5')">iPhone</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q5')">Android</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q5')">Both</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q5')">Computer / Tablet</button>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div style="margin-bottom:28px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">6. What excites you most about HarmonyAlong?</label>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;" id="q6">
+          <button class="feedback-chip" onclick="selectChip(this,'q6')">Learning my part easily</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q6')">Singing with family</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q6')">Connecting with singers globally</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q6')">No music training needed</button>
+          <button class="feedback-chip" onclick="selectChip(this,'q6')">All of it!</button>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div style="margin-bottom:36px;">
+        <label style="display:block;font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--warm-brown);margin-bottom:12px;">7. Anything else you'd like us to know?</label>
+        <textarea id="q7" rows="4" placeholder="Any thoughts, wishes, or ideas are welcome..." style="width:100%;padding:14px 16px;border:2px solid var(--border);border-radius:14px;font-family:'Lato',sans-serif;font-size:15px;color:var(--text);outline:none;resize:vertical;background:#fafafa;transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button onclick="submitFeedback()" id="feedbackBtn" style="width:100%;padding:18px;border-radius:16px;border:none;background:linear-gradient(135deg,var(--gold),var(--coral));color:white;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;cursor:pointer;letter-spacing:0.04em;box-shadow:0 6px 20px rgba(200,136,42,0.3);transition:opacity 0.2s,transform 0.15s;">
+        Share My Feedback 🎵
+      </button>
+
+      <!-- Success -->
+      <div id="feedbackSuccess" style="display:none;margin-top:24px;background:rgba(122,158,126,0.12);border:1px solid rgba(122,158,126,0.35);border-radius:14px;padding:24px;text-align:center;">
+        <div style="font-size:34px;margin-bottom:8px;">🎶</div>
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--sage);font-weight:700;margin-bottom:6px;">Thank you so much!</div>
+        <div style="font-size:14px;color:var(--muted);line-height:1.6;">Your feedback means the world to us and will directly shape how we build HarmonyAlong.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.feedback-chip {
+  padding: 9px 18px;
+  border-radius: 100px;
+  border: 2px solid var(--border);
+  background: white;
+  color: var(--muted);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.feedback-chip:hover { border-color: var(--gold); color: var(--warm-brown); }
+.feedback-chip.selected { background: rgba(200,136,42,0.1); border-color: var(--gold); color: var(--gold); font-weight: 700; }
+</style>
+
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-logo">Harmony<span>Along</span></div>
@@ -836,7 +943,33 @@
 </footer>
 
 <script>
-function signUp(inputId, successId, formId) {
+function selectChip(el, groupId) {
+  document.querySelectorAll(`#${groupId} .feedback-chip`).forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function submitFeedback() {
+  const btn = document.getElementById('feedbackBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending... ✓';
+
+  const q1 = document.getElementById('q1').value;
+  const q2 = document.querySelector('#q2 .selected')?.textContent || 'Not answered';
+  const q3 = document.getElementById('q3').value;
+  const q4 = document.querySelector('#q4 .selected')?.textContent || 'Not answered';
+  const q5 = document.querySelector('#q5 .selected')?.textContent || 'Not answered';
+  const q6 = document.querySelector('#q6 .selected')?.textContent || 'Not answered';
+  const q7 = document.getElementById('q7').value;
+
+  const body = `New HarmonyAlong Feedback:\n\n1. How they currently learn harmonies:\n${q1}\n\n2. How often they sing:\n${q2}\n\n3. Hardest part about harmonizing:\n${q3}\n\n4. Favorite music type:\n${q4}\n\n5. Device:\n${q5}\n\n6. Most exciting feature:\n${q6}\n\n7. Other thoughts:\n${q7}`;
+
+  window.location.href = `mailto:harmonyalongapp@gmail.com?subject=HarmonyAlong Feedback&body=${encodeURIComponent(body)}`;
+
+  setTimeout(() => {
+    document.getElementById('feedbackBtn').style.display = 'none';
+    document.getElementById('feedbackSuccess').style.display = 'block';
+  }, 800);
+}
   const input = document.getElementById(inputId);
   const email = input.value.trim();
 
